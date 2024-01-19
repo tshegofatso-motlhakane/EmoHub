@@ -1,0 +1,163 @@
+$primary-color: #5E7872;
+$secondary-color: #D9D9D9;
+
+body{
+    background-color: $secondary-color;
+    height: auto;
+    width: auto;
+}
+
+.nav-bar{
+    height: 5vh;
+    width: 97%;
+    margin: 5px 0 0 9px;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px 0 10px;
+    border-radius: 10px;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    font-size: small;
+    background-color: cadetblue;
+    color :$secondary-color;
+    text-align: center;
+   
+    border-radius: 15% 0 15% 0;
+
+    p{
+        font-family: cursive;
+        margin-top: 3px;
+    }
+}
+
+.navigation-list{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+
+    a{
+        font-family: cursive;
+        text-decoration: none;
+        color: $secondary-color
+    }
+}
+
+.hero-section {
+    height: 60vh;
+    background-color: $primary-color; /* Assuming $primary-color is a valid color variable */
+    margin: 10px;
+    overflow: hidden; /* Ensure that the background image doesn't overflow the container */
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Cover ensures the image covers the entire container */
+    background-position: center;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Add a transition effect on opacity */
+}
+
+.slide.active {
+    display: block;
+    opacity: 1;
+}
+
+
+main{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+
+.catagories-container{
+    width: 90%;
+    height: 250px;
+    background-color: $secondary-color;
+    margin: 10px 0 0 65px ;
+    border: 2px solid $primary-color;
+
+    p{
+        margin: 2px 0 0 45%;
+        color: #5E7872;
+        font-size: large;
+       
+    }
+
+    .categories{
+     
+      height: 85%;
+      width: 100%;
+      margin: 5px 0 0 0;
+      display: flex;
+      justify-content: space-around;
+
+      .category-box{
+
+        background-color: $primary-color;
+        width: 200px;
+        height: 95%;
+        border-radius: 10%;
+      }
+    }
+}
+
+.product-preview{
+    height: 900px;
+    width: auto;
+    margin: 20px 10px 10px 10px;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+  
+
+    
+}
+
+.box-container{
+    
+    height: 300px;
+    .box{
+        width: 99%;
+        height: 90%;
+        margin: 5px;
+        background-color: $secondary-color;
+    }
+    p{
+        color: $secondary-color;
+        margin: 5px 0 0 15px;
+    }
+}
+
+footer{
+
+    height: 50px;
+    width: 100%;
+    margin-top: 5px;
+    background-color: $primary-color;
+}
+
+.product-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    li{
+        width: 15%;
+        height: 27vh;
+        background-color: grey;
+        margin-top: 10px;
+    }
+}
+
+

@@ -1,1 +1,79 @@
-<p>home works!</p>
+<body>
+   <nav class="nav-bar">
+     <div class="logo">
+     <p> Emo
+      Hub</p>
+     </div>
+     <ul class="navigation-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#catalog">Catalog</a></li>
+      <li><a href="#cart">Cart</a></li>
+      <li><a href="#about">About Us</a></li>
+    </ul>
+   </nav>
+   <section class="hero-section">
+      <div class="slide" *ngFor="let slide of slides; let i = index" [ngStyle]="{'background-image': 'url(' + slide + ')'}" [class.active]="i === currentSlide">
+        
+       </div>
+   </section>
+   <main>
+
+      <div class="catagories-container">
+         <p>Categories</p>
+         <div class="categories">
+            <div class="category-box"></div>
+            <div class="category-box"></div>
+            <div class="category-box"></div>
+            <div class="category-box"></div>
+         </div>
+      </div>
+
+      <div class="product-preview">
+
+
+         <div class="box-container">
+            <p>Promotion</p>
+            <div class="box">
+               <ul class="product-list">
+                  <li>hey</li>
+                  <li>hey</li>
+                  <li>hey</li>
+                  <li>hey</li>
+                  <li>hey</li>
+               </ul>
+            </div>
+         </div>
+         <div class="box-container">
+            <p>New</p>
+            <div class="box">
+               <ul class="product-list">
+                  <li>hey</li>
+                  <li>hey</li>
+                  <li>hey</li>
+                  <li>hey</li>
+                  <li>hey</li>
+               </ul>
+            </div>
+         </div>
+         <div class="box-container">
+            <p>Popular</p>
+            <div class="box">
+               <ul class="product-list">
+                  <li>hey</li>
+                  <li>hey</li>
+                  <li>hey</li>
+                  <li>hey</li>
+                  <li>hey</li>
+               </ul>
+            </div>
+         </div>
+
+      </div>
+
+   </main>
+
+   <footer>
+      <p>copyright haha</p>
+   </footer>
+
+</body>
