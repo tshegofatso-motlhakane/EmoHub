@@ -12,6 +12,10 @@ body{
     width: 97%;
     margin: 5px 0 0 9px;
     background-color: $primary-color;
+    background-color: #5E7872;
+    box-shadow: -3px -3px 7px #ffffff73, 
+     2px 2px 5px rgba(94, 104, 121, 0.288);
+
     display: flex;
     justify-content: space-between;
     padding: 5px 10px 0 10px;
@@ -80,15 +84,17 @@ main{
 }
 
 .catagories-container{
-    width: 90%;
+    width: 95%;
     height: 250px;
-    background-color: $secondary-color;
-    margin: 10px 0 0 65px ;
-    border: 2px solid $primary-color;
+    background-color: $primary-color;
+    margin: 10px 0 0 0 ;
+    align-self: center;
+    border-radius: 15px;
+
 
     p{
         margin: 2px 0 0 45%;
-        color: #5E7872;
+        color: $secondary-color;
         font-size: large;
        
     }
@@ -102,8 +108,9 @@ main{
       justify-content: space-around;
 
       .category-box{
-
         background-color: $primary-color;
+        box-shadow:  10px 10px 72px #26302e,
+             -10px -10px 72px #96c0b6;
         width: 200px;
         height: 95%;
         border-radius: 10%;
